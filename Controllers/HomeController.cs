@@ -18,7 +18,7 @@ namespace TestTask.Controllers
 
         public ActionResult Products(int id)
         {
-            return PartialView(db.Products.GetProductsByStore(id));
+            return PartialView(db.Products.GetAll().Where(p => p.StoreId == id));
         }
 
         protected override void Dispose(bool disposing)

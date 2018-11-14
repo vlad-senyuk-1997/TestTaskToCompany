@@ -25,10 +25,5 @@ namespace TestTask.Repositories
         {
             return storeContext.Stores.Find(id);
         }
-
-        public IEnumerable<Store> GetProductsByStore(int id)
-        {
-            throw new Exception();
-        }
     }
 }

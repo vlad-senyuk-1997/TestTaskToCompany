@@ -22,7 +22,7 @@ namespace TestTask.Controllers
         // GET: api/Default/5
         public IEnumerable<Product> Get(int id)
         {
-            return db.Products.GetProductsByStore(id);
+            return db.Products.GetAll().Where(p => p.StoreId == id);
         }
 
         protected override void Dispose(bool disposing)

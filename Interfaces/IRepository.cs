@@ -10,6 +10,5 @@ namespace TestTask.Interfaces
     {
         IEnumerable<T> GetAll();
         T GetById(int id);
-        IEnumerable<T> GetProductsByStore(int id);
     }
 }

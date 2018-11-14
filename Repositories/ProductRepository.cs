@@ -25,10 +25,5 @@ namespace TestTask.Repositories
         {
             return storeContext.Products.Find(id);
         }
-
-        public IEnumerable<Product> GetProductsByStore(int id)
-        {
-            return storeContext.Products.Where(p => p.StoreId == id);
-        }
     }
 }
